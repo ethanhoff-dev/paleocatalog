@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academic Catalog</title>
+    <style>
+        :root { --navy:#17365d; --blue:#286090; --ink:#27323a; --muted:#66727c; --line:#d9e0e5; --wash:#f4f6f8; }
+        * { box-sizing:border-box; }
+        body { margin:0; padding:40px 56px 48px; color:var(--ink); font:15px/1.55 Arial, Helvetica, sans-serif; background:#fff; }
+        a { color:var(--blue); text-decoration:none; }
+        a:hover { text-decoration:underline; }
+        .catalog-entry { max-width:980px; margin:0 auto; padding:8px 10px 0; }
+        .breadcrumbs { margin:0 0 14px; color:var(--muted); font-size:13px; }
+        .breadcrumbs a { margin-right:8px; }
+        h1 { margin:0 0 6px; color:var(--navy); font-size:30px; line-height:1.15; letter-spacing:-0.02em; }
+        .subtitle { margin:0 0 18px; color:var(--muted); font-size:16px; }
+        .notice { margin:0 0 18px; padding:12px 14px; border-left:4px solid var(--blue); background:#eef5fa; }
+        h2 { margin:20px 0 0; padding:10px 14px; color:#fff; background:var(--navy); font-size:18px; }
+        .section-body { padding:16px 14px; border:1px solid var(--line); border-top:0; }
+        .section-body > p { margin-top:0; }
+        .requirement-group { margin-top:12px; border:1px solid var(--line); background:#fff; }
+        .requirement-group:first-of-type { margin-top:0; }
+        .requirement-group > h3 { margin:0; padding:10px 12px; color:var(--navy); background:var(--wash); border-bottom:1px solid var(--line); font-size:15px; letter-spacing:0.02em; text-transform:uppercase; }
+        .selector { margin:0; padding:10px 12px 0; color:var(--muted); font-size:13px; }
+        .option-block { margin:10px 0 0; padding:0 12px 12px; }
+        .option-block h4, .option-block h5 { margin:0 0 8px; color:var(--navy); font-size:13px; letter-spacing:0.02em; text-transform:uppercase; }
+        .option-block h4 { padding-top:8px; border-top:1px solid var(--line); }
+        .option-block:first-of-type h4 { border-top:0; padding-top:0; }
+        .meta { display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin:0 0 16px; }
+        .meta div { padding:12px 14px; background:var(--wash); }
+        .meta dt { color:var(--muted); font-size:12px; font-weight:bold; text-transform:uppercase; }
+        .meta dd { margin:3px 0 0; }
+        .requirement { display:flex; justify-content:space-between; gap:18px; padding:10px 0; border-bottom:1px solid var(--line); }
+        .requirement:last-child { border-bottom:0; }
+        .requirement strong { color:var(--navy); }
+        .credits { white-space:nowrap; color:var(--muted); }
+        @media (max-width:700px) {
+            body { padding:24px 20px 32px; }
+            .catalog-entry { padding:0; }
+            .meta { grid-template-columns:1fr; }
+            h1 { font-size:26px; }
+        }
+    </style>
+</head>
+<body>
+    <main class="catalog-entry">
+        <h1>Interdisciplinary Studies with an emphasis in Paleobiology</h1>
+        <p class="subtitle">B.Sc. · Utah State University</p>
+
+
+        <div class="notice">Use this area for a brief program overview, important note, or catalog disclaimer.</div>
+
+
+        <dl class="meta">
+            <div><dt>Program Code</dt><dd>XXXX</dd></div>
+            <div><dt>Degree</dt><dd>Degree Name</dd></div>
+            <div><dt>Total Credits</dt><dd>XX credits</dd></div>
+        </dl>
+
+
+        <h2>Program Requirements</h2>
+        <div class="section-body">
+            <div class="requirement-group">
+                <h3>Required Courses</h3>
+                <div class="requirement"><span><strong>GEO 1110</strong> · Physical Geology (BPS)</span><span class="credits">3.0</span></div>
+                <div class="requirement"><span><strong>GEO 1115</strong> · Physical Geology Lab</span><span class="credits">1.0</span></div>
+                <div class="requirement"><span><strong>GEO 2200</strong> · Earth Through Time</span><span class="credits">3.0</span></div>
+                <div class="requirement"><span><strong>GEO 2205</strong> · Earth Through Time Lab</span><span class="credits">1.0</span></div>
+                <div class="requirement"><span><strong>GEO 2800</strong> · Minerals and Rocks</span><span class="credits">4.0</span></div>
+                <div class="requirement"><span><strong>GEO 3400</strong> · Communicating GeoSci (CI)</span><span class="credits">3.0</span></div>
+                <div class="requirement"><span><strong>GEO 3550</strong> · Sed and Strat</span><span class="credits">4.0</span></div>
+                <div class="requirement"><span><strong>BIOL 1610</strong> · Biology I</span><span class="credits">3.0</span></div>
+                <div class="requirement"><span><strong>BIOL 1615</strong> · Bio I Lab</span><span class="credits">1.0</span></div>
+                <div class="requirement"><span><strong>BIOL 1620</strong> · Biology II (BLS)</span><span class="credits">3.0</span></div>
+                <div class="requirement"><span><strong>BIOL 1625</strong> · Bio II Lab</span><span class="credits">1.0</span></div>
+            </div>
+
+
+            <div class="requirement-group">
+                <h3>Geology Electives</h3>
+                <p class="selector">Choose two courses from the following:</p>
+                <div class="option-block">
+                    <h4>Geology Electives</h4>
+                    <div class="requirement"><span><strong>GEO 3250</strong> · Natural History of Dinosaurs</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>GEO 3600</strong> · Geomorphology</span><span class="credits">4.0</span></div>
+                    <div class="requirement"><span><strong>GEO 3700</strong> · Structural Geology</span><span class="credits">4.0</span></div>
+                    <div class="requirement"><span><strong>GEO 3800</strong> · Applied Geoscience Techniques</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>GEO 5660</strong> · Applied Geophysics</span><span class="credits">4.0</span></div>
+                </div>
+            </div>
+
+
+            <div class="requirement-group">
+                <h3>Biology Electives</h3>
+                <p class="selector">Choose two courses from the following:</p>
+                <div class="option-block">
+                    <h4>Biology Electives</h4>
+                    <div class="requirement"><span><strong>BIOL 3020</strong> · Evolutionary Biology</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>BIOL 3050</strong> · Organismal Biology and Physiology</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>BIOL 3060</strong> · Principles of Genetics (QI)</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>BIOL 4770</strong> · Introduction to Dynamic Biological Systems</span><span class="credits">3.0</span></div>
+                </div>
+            </div>
+
+
+            <div class="requirement-group">
+                <h3>Project-Based Electives</h3>
+                <p class="selector">Choose one track from the following:</p>
+                <div class="option-block">
+                    <h4>Research-based</h4>
+                    <div class="requirement"><span><strong>GEO 4900 or BIOL 5800</strong> · Special Topics / Undergraduate Research</span><span class="credits">3.0</span></div>
+                </div>
+                <div class="option-block">
+                    <h4>Internship-based</h4>
+                    <div class="requirement"><span><strong>GEO 4850 or BIOL 4250</strong> · Internship / Co-op</span><span class="credits">3.0</span></div>
+                </div>
+                <div class="option-block">
+                    <h4>Field Camp-based</h4>
+                    <div class="requirement"><span><strong>GEO 3900</strong> · Geo Field Methods (CI)</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>GEO 5200 or GEO 5210 or ERTH 491</strong> · Geology Field Camp</span><span class="credits">5.0</span></div>
+                </div>
+            </div>
+
+
+            <div class="requirement-group">
+                <h3>Chemistry Options</h3>
+                <p class="selector">Choose one course sequence from the following:</p>
+                <div class="option-block">
+                    <h4>Chemistry</h4>
+                    <div class="requirement"><span><strong>CHEM 1210</strong> · Principles of Chem (BPS)</span><span class="credits">4.0</span></div>
+                    <div class="requirement"><span><strong>CHEM 1215</strong> · Principles of Chem Lab</span><span class="credits">1.0</span></div>
+                    <div class="requirement"><span><strong>CHEM 1220</strong> · Principles of Chem II</span><span class="credits">4.0</span></div>
+                    <div class="requirement"><span><strong>CHEM 1225</strong> · Principles of Chem II Lab</span><span class="credits">1.0</span></div>
+                </div>
+            </div>
+
+
+            <div class="requirement-group">
+                <h3>Math Options</h3>
+                <p class="selector">Choose from the following:</p>
+                <div class="option-block">
+                    <h4>Math</h4>
+                    <div class="requirement"><span><strong>MATH 1210 or MATH 1100</strong> · Calculus I</span><span class="credits">4.0</span></div>
+                    <div class="requirement"><span><strong>STAT 2000 or STAT 3000</strong> · Statistical Methods</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>CS 1400</strong> · Intro to Comp Sci</span><span class="credits">4.0</span></div>
+                    <div class="requirement"><span><strong>GEOG 2800</strong> · Intro GIS</span><span class="credits">4.0</span></div>
+                </div>
+            </div>
+
+
+            <div class="requirement-group">
+                <h3>Physics Options</h3>
+                <p class="selector">Choose one sequence from the following:</p>
+                <div class="option-block">
+                    <h4>Physics</h4>
+                    <div class="requirement"><span><strong>PHYS 2010 or PHYS 2110 or PHYS 2210</strong> · General Physics I</span><span class="credits">4.0</span></div>
+                    <div class="requirement"><span><strong>PHYS 2015 or PHYS 2215 / NOLAB</strong> · General Physics I Lab</span><span class="credits">1.0</span></div>
+                    <div class="requirement"><span><strong>PHYS 2020 or PHYS 2120 or PHYS 2220</strong> · General Physics II</span><span class="credits">4.0</span></div>
+                    <div class="requirement"><span><strong>PHYS 2025 or PHYS 2225 / NOLAB</strong> · General Physics II Lab</span><span class="credits">1.0</span></div>
+                </div>
+            </div>
+
+
+            <div class="requirement-group">
+                <h3>General Electives</h3>
+                <p class="selector">Choose from the following:</p>
+                <div class="option-block">
+                    <h4>General Electives</h4>
+                    <div class="requirement"><span><strong>BIOL 5530</strong> · Insect System and Evolution</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>BIOL 5550</strong> · Freshwater Inverts</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>BIOL 5560</strong> · Ornithology</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>BIOL 5570</strong> · Mammalogy</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>BIOL 5580</strong> · Herpetology</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>BIOL 5600</strong> · Comparative Animal Physiology</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>GEO 5410</strong> · Advanced Stratigraphy</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>GEO 5430</strong> · Invertebrate Paleontology and Paleobotany</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>GEO 5440</strong> · Vertebrate Paleontology</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>GEO 5600</strong> · Geochemistry</span><span class="credits">4.0</span></div>
+                    <div class="requirement"><span><strong>GEO 5680</strong> · Paleoclimate</span><span class="credits">3.0</span></div>
+                    <div class="requirement"><span><strong>GEOG 3200</strong> · Remote Sensing</span><span class="credits">3.0</span></div>
+                </div>
+            </div>
+        </div>
+
+
+        <h2>Additional Information</h2>
+        <div class="section-body">
+            <p>This degree combines core geology and biology coursework with supporting chemistry, math, physics, and project-based electives. Students may tailor the program toward research, internships, or field-based paleobiology applications.</p>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
